@@ -42,10 +42,10 @@ function getBotResponse(message) {
   message = message.toLowerCase();
 
   const patterns = [
-    { regex: /hi|hello|hey/, response: "Hello! How can I help you today?" },
+    { regex: /hi|hello|hey/, response: "Hello! How can I assist you today?" },
     { regex: /how are you/, response: "I'm just a bot, but I'm doing great!" },
     { regex: /help/, response: "Sure, I'm here to help! What do you need assistance with?" },
-    { regex: /bye|goodbye/, response: "Goodbye! Have a great day!" },
+    { regex: /bye|goodbye/, response: "Goodbye! Have a wonderful day!" },
     { regex: /your name/, response: "I'm your friendly chatbot!" },
   ];
 
@@ -55,7 +55,7 @@ function getBotResponse(message) {
     }
   }
 
-  return "I'm sorry, I didn't understand that. Can you rephrase?";
+  return "I'm sorry, I didn't understand that. Can you please rephrase?";
 }
 
 // Initialize chat as hidden
